@@ -1,0 +1,90 @@
+body {
+  background: linear-gradient(135deg, #A1C4FD, #C2E9FB);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background: #fff;
+  margin-top: 40px;
+  border-radius: 20px;
+  padding: 30px;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #4A47A3;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #4A47A3;
+  outline: none;
+  resize: none;
+}
+
+.file-upload {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #6C63FF;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.file-upload:hover { background-color: #5751D9; }
+
+#rankBtn {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: #4A47A3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#rankBtn:hover { background-color: #37338C; }
+
+#loader {
+  display: none;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+#progressContainer {
+  width: 100%;
+  background: #eee;
+  height: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+#progressBar {
+  width: 0%;
+  height: 10px;
+  background: #4A47A3;
+  transition: width 1s ease;
+}
+
+.result-card {
+  background: #F0F3FF;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+.result-card h3 { color: #4A47A3; margin: 0; }
+.result-card p { margin: 5px 0; color: #333; }
