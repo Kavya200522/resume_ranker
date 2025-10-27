@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Ranker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🌈 Resume Ranker</h1>
+    <p>Upload resumes and match them to your job description — ranked by keyword similarity!</p>
+
+    <textarea id="jobDesc" placeholder="Paste the job description here..."></textarea>
+
+    <label class="file-upload">
+      📎 Upload Resumes
+      <input type="file" id="resumes" multiple>
+    </label>
+
+    <button id="rankBtn">Rank Resumes</button>
+
+    <div id="loader" class="loader">Analyzing resumes... ⏳</div>
+    <div id="progressContainer"><div id="progressBar"></div></div>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
